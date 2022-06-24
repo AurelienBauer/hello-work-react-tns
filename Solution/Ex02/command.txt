@@ -1,0 +1,2 @@
+docker build --tag hello-website-on-nginx .
+docker run -p 3000:80 -d hello-website-on-nginx

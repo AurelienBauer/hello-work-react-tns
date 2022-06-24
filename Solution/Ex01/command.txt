@@ -1,0 +1,2 @@
+docker build --tag hello-website .
+docker run -p 3000:3000 -d hello-website
