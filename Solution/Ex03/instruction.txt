@@ -1,0 +1,18 @@
+Your company is looking for a new CMS (content management system) and they ask you to install Drupal on an internal server to evaluate and test the product.
+This evaluation will take a week, then the data should be stored somewhere on the server. So, even if the server crash and/or the docker containers are deleted the data still exist.
+
+The quicker way to do this task is by using Docker.
+To work Drupal need to be connected to a database, for this exercice you'll use a Postgres DB.
+As you already now, by using Docker you don't need to install a database on your local machine.
+For this exercice you'll use the drupal official image and the official postgres image. You can find both on https://hub.docker.com/
+
+To complete this exercice:
+- Use only: docker-compose up 
+- You can access Drupal on localhost:8080 and install it through the web UI
+- Use: docker-compose down
+- And: docker-compose up
+- You can access Drupal and you don't need to install it again
+
+In the case you company valid Drupal as their new CMS and ask you to deploy it on a production server. I don't recommand using Postgres on docker.
+If your company are on AWS use RDS. Why ? Everything is well explained here. https://vsupalov.com/database-in-docker/
+
